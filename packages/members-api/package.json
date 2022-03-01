@@ -26,7 +26,7 @@
     "sinon": "13.0.1"
   },
   "dependencies": {
-    "@nexes/nql": "^0.6.0",
+    "@nexes/nql": "^0.7.0",
     "@tryghost/debug": "^0.1.2",
     "@tryghost/domain-events": "^0.1.7",
     "@tryghost/errors": "^1.1.1",
