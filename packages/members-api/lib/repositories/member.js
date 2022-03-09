@@ -117,7 +117,7 @@ module.exports = class MemberRepository {
             });
         }
 
-        const memberData = _.pick(data, ['email', 'name', 'note', 'subscribed', 'geolocation', 'created_at', 'products']);
+        const memberData = _.pick(data, ['email', 'name','address', 'note', 'subscribed', 'geolocation', 'created_at', 'products']);
 
         if (memberData.products && memberData.products.length > 1) {
             throw new errors.BadRequestError({message: tpl(messages.moreThanOneProduct)});
@@ -201,6 +201,7 @@ module.exports = class MemberRepository {
         const memberData = _.pick(data, [
             'email',
             'name',
+            'address',
             'note',
             'subscribed',
             'labels',
